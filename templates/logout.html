@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Cerrar Sesión{% endblock %}
+{% block content %}
+<center><h1>¡Hasta luego, gracias por tu visita!</h1>  <!-- Mensaje personalizado -->
+    <p>Tu sesión ha sido cerrada con éxito.</p>  <!-- Mensaje de confirmación -->
+    <a href="{{ url_for('login') }}" class="btn btn-primary">Volver al Login</a></center>
+{% endblock %}

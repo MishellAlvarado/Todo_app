@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+    <h1 class="text-center">🚗 Registro de Marcas de Carros 🚙</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="car-form">
+                <h3>➕ Agregar Nuevo Carro</h3>
+                <form action="/agregar" method="post">
+                    <div class="mb-2">
+                        <label>Marca:</label>
+                        <input type="text" name="marca" class="form-control" placeholder="Ej: Toyota, Ford" required>
+                    </div>
+                    <div class="mb-2">
+                        <label>Origen:</label>
+                        <input type="text" name="origen" class="form-control" placeholder="Ej: Japón, EE.UU." required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Agregar 🚘</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="table-container">
+                <h3>📋 Lista de Marcas</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Marca</th>
+                        <th>Origen</th>
+                        <th>En Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for carro in carros %}
+                    <tr>
+                        <td>{{ carro.id }}</td>
+                        <td>{{ carro.marca }}</td>
+                        <td>{{ carro.origen }}</td>
+                        <td>{{ carro.en_stock }}</td>
+                        <td>
+                            <form action="/cambiar_stock/{{ carro.id }}" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-success">🔄 Cambiar Stock</button>
+                            </form>
+                            <form action="/eliminar/{{ carro.id }}" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

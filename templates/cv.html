@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+{% block title %}Currículum de Genesis Ortiz{% endblock %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mishell Estefanía Alvarado González</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#perfil">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencia">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#educacion">Educación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<section class="header-section">
+    <h1>Mishell Estefanía Alvarado González</h1>
+    <p>Establecerme y consolidarme en una empresa que me otorgue estabilidad y seguridad laboral, para poder aplicar mis experiencias y conocimientos en el área de mantenimiento o en el área que se me asigne dentro de la empresa para desarrollarme profesionalmente y colaborar con ideas frescas para futuros proyectos dentro de la misma.</p>
+    <a href="#perfil" class="btn btn-custom">Ver Perfil</a>
+</section>
+
+<div class="container">
+    
+    <!-- Información Personal -->
+    <section id="informacion-personal" class="row mb-5">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="{{ url_for('static', filename='images/mishell_imagen.jpeg') }}" alt="Foto de perfil" class="Mishell Alvarado">
+
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Mishell Estefanía Alvarado González</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Número de Cédula:</strong> 0951982669</li>
+                        <li class="list-group-item"><strong>Fecha de Nacimiento:</strong> 14/10/1993</li>
+                        <li class="list-group-item"><strong>Estado civil:</strong> Soltera</li>
+                        <li class="list-group-item"><strong>Celular:</strong> 0962716782</li>
+                        <li class="list-group-item"><strong>E-mail:</strong> mishell.lilith2@gmail.com</li>
+                        <li class="list-group-item"><strong>Dirección:</strong> Mucho Lote III Etapa, Mz. 2444, Sl. 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivo Profesional -->
+    <section id="perfil" class="section-content">
+        <h2 class="section-title">Objetivo Profesional</h2>
+        <p>Establecerme y consolidarme en una empresa que me otorgue estabilidad y seguridad laboral, para poder aplicar mis experiencias y conocimientos en el área de mantenimiento o en el área que se me asigne dentro de la empresa para desarrollarme profesionalmente y colaborar con ideas frescas para futuros proyectos dentro de la misma.</p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section-content">
+        <h2 class="section-title">Habilidades</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Comunicación Interpersonal</li>
+            <li class="list-group-item">Liderazgo</li>
+            <li class="list-group-item">Trabajo en Equipo</li>
+            <li class="list-group-item">Organización</li>
+            <li class="list-group-item">Planificación</li>
+            <li class="list-group-item">Expresión escrita</li>
+            <li class="list-group-item">Análisis</li>
+        </ul>
+    </section>
+
+    <!-- Formación Académica -->
+    <section id="educacion" class="section-content">
+        <h2 class="section-title">Formación Académica</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Título:</strong> Educación Básica | <strong>Tipo:</strong> Primaria | <strong>Escuela:</strong> "28 de Agosto" | <strong>Ciudad:</strong> Guayaquil - Ecuador</li>
+            <li class="list-group-item"><strong>Título:</strong> Bachiller en Administración en Sistemas | <strong>Tipo:</strong> Secundaria | <strong>Escuela:</strong> "Pdte. Carlos Julio Arosemena Tola" | <strong>Ciudad:</strong> Guayaquil - Ecuador</li>
+            <li class="list-group-item"><strong>Título:</strong> Gestión De La Información Gerencial | <strong>Tipo:</strong> Universitaria | <strong>Facultad:</strong> Facultad de Ciencias Administrativas UG | <strong>Estado:</strong> Actualmente estudiando (4to Semestre) | <strong>Horario:</strong> Nocturno | <strong>Universidad:</strong> Universidad de Guayaquil</li>
+        </ul>
+    </section>
+
+   <!-- Experiencia Laboral -->
+<section id="experiencia" class="section-content">
+<h2 class="section-title">Experiencia Laboral</h2>
+<div class="accordion" id="experienciaAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Universidad Católica De Santiago De Guayaquil - Atención a Usuarios
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienciaAccordion">
+            <div class="accordion-body">
+                Área de Lectura de la Facultad de Jurisprudencia.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Distribuidora de Claro - Promotora
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienciaAccordion">
+            <div class="accordion-body">
+                Promocionar chip de esa marca.
+            </div>
+        </div>
+    </div>
+    <!-- H&H Soluciones Prácticas -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                H&H Soluciones Prácticas
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experienciaAccordion">
+            <div class="accordion-body">
+                Experiencia en diversas áreas operativas y de mantenimiento.
+            </div>
+        </div>
+    </div>
+    <!-- Portrans-Agunsa -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Portrans-Agunsa - Inspectora de Calidad
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#experienciaAccordion">
+            <div class="accordion-body">
+                Trabajo en las diferentes actividades de inspección y control de calidad en la empresa.
+            </div>
+        </div>
+    </div>
+    <!-- Cervecería Nacional -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Cervecería Nacional - Seguridad Industrial
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#experienciaAccordion">
+            <div class="accordion-body">
+                Capacitación en Seguridad Industrial.
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+    <!-- Capacitación y Formación Adicional -->
+    <section id="formacion-adicional" class="section-content">
+        <h2 class="section-title">Formación Adicional</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Capacitación en Seguridad Industrial</strong> | Cervecería Nacional | Duración: 3 Horas</li>
+            <li class="list-group-item"><strong>Capacitación BPM (Buenas Prácticas de Manufactura)</strong> | Portrans-Agunsa | Duración: 2 Horas</li>
+            <li class="list-group-item"><strong>Capacitación BPM y Seguridad Industrial</strong> | La Universal | Duración: 2 Horas</li>
+        </ul>
+    </section>
+
+    <!-- Referencias -->
+    <section id="referencias" class="section-content">
+        <h2 class="section-title">Referencias</h2>
+        <h3 class="section-title">Personales</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Lcda. Joselyne Yolanda Tapia Carrera</strong> | Conocida | 0983373959 | josselove22@gmail.com</li>
+            <li class="list-group-item"><strong>Lcda. Carolina Isabel Alarcón Díaz</strong> | Conocida | 0998425520 | carolialarcond@hotmail.com</li>
+        </ul>
+        <h3 class="section-title">Laborales</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Pedro Alberto Díaz Donoso</strong> | Ex Inspector de Calidad Portrans | 0979232940</li>
+            <li class="list-group-item"><strong>Ricardo Morán Pluas</strong> | H&H/Coestibas | 0960206974</li>
+            <li class="list-group-item"><strong>Evelyn Fernanda Arteaga Godoy</strong> | H&H Soluciones Prácticas | 0986197790</li>
+        </ul>
+    </section>
+
+    <!-- Contacto -->
+<section id="contacto" class="section-content text-center">
+<h2 class="section-title">Contacto</h2>
+<p>Envíame un correo a <a href="mailto:mishell.lilith2@gmail.com" class="btn btn-custom">mishell.lilith2@gmail.com</a></p>
+<div class="social-links">
+    <!-- Enlace a Instagram -->
+    <a href="https://www.instagram.com/mishell_lilith" class="btn btn-outline-primary mx-2" target="_blank">
+        <i class="bi bi-instagram"></i> Instagram
+    </a>
+    <!-- Enlace a LinkedIn -->
+    <a href="https://www.linkedin.com/in/mishell-alvarado-708366326/" class="btn btn-outline-primary mx-2" target="_blank">
+        <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+</div>
+</section>
+
+<footer class="footer">
+<p>&copy; 2024 Mishell Estefanía Alvarado González</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</body>
+</html>
+{% endblock %}
